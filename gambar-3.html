@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gambar-3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+            font-style: normal;
+        }
+        .wrapper {
+            margin: auto;
+            margin-top: 20px;
+            width: 386px;
+            /* border: 1px solid black; */
+            box-shadow: 0px 0px 10px 1px rgba(172, 172, 172, .5);
+            border-radius: 15px;
+        }
+
+        .wrapper .gambar-atas {
+            height: 257px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 21px;
+            font-weight: 500;
+        }
+
+        .source {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .account1 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .account1 .pp {
+            width: 30px;
+            border-radius: 50%;
+        }
+
+        .info {
+            display: flex;
+            gap: 10px;
+        }
+
+        .info .like {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .info .chat {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .like img, .chat img {
+            width: 18px;
+            opacity: 50%;
+        }
+
+        .like span, .chat span {
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img class="gambar-atas" src="gambar.jpg" alt="">
+        <div class="content">
+            <h1>Urban Dreams</h1>
+            <div class="source">
+                <div class="account1">
+                    <img class="pp" src="ronaldo.jpg" alt="">
+                    <span>Cristiano Ronaldo</span>
+                </div>
+                <div class="info">
+                    <div class="like">
+                        <img src="like.png" alt="">
+                        <span>24</span>
+                    </div>
+                    <div class="chat">
+                        <img src="chat.png" alt="">
+                        <span>5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

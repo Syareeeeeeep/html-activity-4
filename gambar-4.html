@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gambar-4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+            font-style: normal;
+        }
+
+        h2{
+            font-size: 20px;
+        }
+
+        button {
+            border-radius: 5px;
+            padding: 7px;
+            border: none;
+        }
+
+        button i {
+            font-size: 20px;
+        }
+
+        button span {
+            font-size: 16px;
+        }
+
+        .satu {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            border: 1px solid #1871dd;
+            background-color: #1871dd;
+            color: white;
+        }
+
+        .satu span {
+            margin-right: 5px;
+        }
+
+        .satu:hover {
+            color: rgb(226, 226, 226);
+            background-color: #125db8;
+            transition: ease-in-out .2s;
+        }
+
+        .satu:active {
+            transform: translateY(2px);
+            transition: ease-in-out .1s;
+        }
+
+        .dua:hover {
+            background-color: #ececec;
+            transition: ease-in-out .2s;
+        }
+
+        .dua:active {
+            transform: translateY(2px);
+            transition: ease-in-out .1s;
+        }
+        
+        .tiga:hover {
+            background-color: #ececec;
+            transition: ease-in-out .2s;
+        }
+
+        .tiga:active {
+            transform: translateY(2px);
+            transition: ease-in-out .1s;
+        }
+
+        .dua {
+            border: 1px solid rgb(209, 209, 209);
+            background-color: #ffffff;
+            color: rgb(145, 145, 145);
+        }
+
+        .tiga {
+            border: 1px solid rgb(209, 209, 209);
+            background-color: #ffffff;
+            color: rgb(145, 145, 145);
+        }
+
+        .container {
+            width: 90%;
+            /* border: 1px solid blue; */
+            margin: auto;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .account {
+            width: 500px;
+            /* border: 2px solid black; */
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .account .avatar {
+            width: 100px;
+            border-radius: 50%;
+            border: 4px solid #19C458;
+        }
+
+        .name {
+            display: flex;
+            /* align-items: baseline; */
+            gap: 4px;
+            /* s */
+        }
+
+        .name h1 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .name i{
+            font-size: 23px;
+            color: #1D81FD;
+        }
+
+        .information {
+            display: flex;
+            gap: 20px;
+        }
+
+        .isi {
+            display: flex;
+            gap: 2px;
+        }
+
+        .isi i {
+            font-size: 20px;
+            color: gray;
+        }
+
+        .isi span {
+            font-weight: 550;
+            letter-spacing: .2px;
+            color: rgb(99, 99, 99);
+        }
+
+        .ngisor {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border: 1px solid greenyellow; */
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+        }
+
+        nav {
+            margin-top: 10px;
+            padding: 10px;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        nav a {
+            display: flex;
+            align-items: center;
+            position: relative;
+            text-decoration: none;
+            font-weight: 600;
+            color: rgb(87, 87, 87);
+            padding: 1px 8px;
+        }
+
+        nav a:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #1871dd;
+            left: 0;
+            bottom: -12px;
+            transform: scaleX(0);
+            transition: ease-in-out .3s;
+        }
+
+        nav a:hover:after {
+            transform: scaleX(1);
+        }
+
+        nav a .works{
+            color: #1871dd;
+        }
+
+        nav i {
+            font-size: 25px;
+        }
+
+        .nav-right{
+            display: flex;
+            gap: 10px;
+        }
+        .ats {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .isine {
+            margin-top: 20px;
+        }
+
+        .pilihan {
+            padding: 5px;
+            padding-right: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+            border: 1px solid rgb(209, 209, 209);
+        }
+
+        .tampilan1, .tampilan2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tampilan1 {
+            padding: 4px;
+            background-color: #ffffff;
+            border: 1px solid rgb(209, 209, 209);
+            border-radius: 3px;
+        }
+
+/* BATAS */
+
+.wrapper {
+            margin: auto;
+            margin-top: 20px;
+            width: 386px;
+            /* border: 1px solid black; */
+            box-shadow: 0px 0px 10px 1px rgba(172, 172, 172, .5);
+            border-radius: 15px;
+        }
+
+        .wrapper .gambar-atas {
+            height: 257px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 21px;
+            font-weight: 500;
+        }
+
+        .source {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .account1 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .account1 .pp {
+            width: 30px;
+            border-radius: 50%;
+        }
+
+        .info {
+            display: flex;
+            gap: 10px;
+        }
+
+        .info .like {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .info .chat {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .like img, .chat img {
+            width: 18px;
+            opacity: 50%;
+        }
+
+        .like span, .chat span {
+            font-size: 13px;
+        }
+
+        .apaya {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="account">
+            <img class="avatar" src="avatar.jpg" alt="">
+            <div class="name">
+                <h1>Kaedehara</h1>
+                <i class='bx bxs-badge-check'></i>
+            </div>
+            <div class="information">
+                <div class="isi">
+                    <i class='bx bx-transfer-alt'></i>
+                    <span>KeenThemes</span>
+                </div>
+                <div class="isi">
+                    <i class='bx bx-map'></i>
+                    <span>SF, Bay Area</span>
+                </div>
+                <div class="isi">
+                    <i class='bx bx-envelope' ></i>
+                    <span>jenny@kteam.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="ngisor">
+            <nav>
+                <a href="#">
+                    <span>Profiles</span>
+                    <i class='bx bx-chevron-down'></i>
+                </a>
+                <a href="#">
+                    <span>Projects</span>
+                    <i class='bx bx-chevron-down'></i>
+                </a>
+                <a href="#">
+                    <span class="works">Works</span>
+                </a>
+                <a href="#">
+                    <span>Teams</span>
+                </a>
+                <a href="#">
+                    <span>Network</span>
+                </a>
+                <a href="#">
+                    <span>Activity</span>
+                </a>
+                <a href="#">
+                    <span>More</span>
+                    <i class='bx bx-chevron-down'></i>
+                </a>
+            </nav>
+            <div class="nav-right">
+                <button class="satu">
+                    <i class='bx bx-group'></i>
+                    <span>Connect</span>
+                </button>
+                <button class="dua">
+                    <i class='bx bx-chat'></i>
+                </button>
+                <button class="tiga">
+                    <i class='bx bx-dots-horizontal-rounded bx-rotate-90' ></i>
+                </button>
+            </div>
+        </div>
+        <div class="isine">
+            <div class="ats">
+                <h2>8 Works</h2>
+                <div class="pilihan">
+                    <div class="tampilan1">
+                        <img src="anu.png" alt="">
+                    </div>
+                    <div class="tampilan2">
+                        <img src="anuu.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="apaya">
+                <div class="wrapper">
+                    <img class="gambar-atas" src="gambar.jpg" alt="">
+                    <div class="content">
+                        <h1>Urban Dreams</h1>
+                        <div class="source">
+                            <div class="account1">
+                                <img class="pp" src="ronaldo.jpg" alt="">
+                                <span>Cristiano Ronaldo</span>
+                            </div>
+                            <div class="info">
+                                <div class="like">
+                                    <img src="like.png" alt="">
+                                    <span>24</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.png" alt="">
+                                    <span>5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <img class="gambar-atas" src="gambar.jpg" alt="">
+                    <div class="content">
+                        <h1>Urban Dreams</h1>
+                        <div class="source">
+                            <div class="account1">
+                                <img class="pp" src="ronaldo.jpg" alt="">
+                                <span>Cristiano Ronaldo</span>
+                            </div>
+                            <div class="info">
+                                <div class="like">
+                                    <img src="like.png" alt="">
+                                    <span>24</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.png" alt="">
+                                    <span>5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <img class="gambar-atas" src="gambar.jpg" alt="">
+                    <div class="content">
+                        <h1>Urban Dreams</h1>
+                        <div class="source">
+                            <div class="account1">
+                                <img class="pp" src="ronaldo.jpg" alt="">
+                                <span>Cristiano Ronaldo</span>
+                            </div>
+                            <div class="info">
+                                <div class="like">
+                                    <img src="like.png" alt="">
+                                    <span>24</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.png" alt="">
+                                    <span>5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <img class="gambar-atas" src="gambar.jpg" alt="">
+                    <div class="content">
+                        <h1>Urban Dreams</h1>
+                        <div class="source">
+                            <div class="account1">
+                                <img class="pp" src="ronaldo.jpg" alt="">
+                                <span>Cristiano Ronaldo</span>
+                            </div>
+                            <div class="info">
+                                <div class="like">
+                                    <img src="like.png" alt="">
+                                    <span>24</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.png" alt="">
+                                    <span>5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <img class="gambar-atas" src="gambar.jpg" alt="">
+                    <div class="content">
+                        <h1>Urban Dreams</h1>
+                        <div class="source">
+                            <div class="account1">
+                                <img class="pp" src="ronaldo.jpg" alt="">
+                                <span>Cristiano Ronaldo</span>
+                            </div>
+                            <div class="info">
+                                <div class="like">
+                                    <img src="like.png" alt="">
+                                    <span>24</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.png" alt="">
+                                    <span>5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <img class="gambar-atas" src="gambar.jpg" alt="">
+                    <div class="content">
+                        <h1>Urban Dreams</h1>
+                        <div class="source">
+                            <div class="account1">
+                                <img class="pp" src="ronaldo.jpg" alt="">
+                                <span>Cristiano Ronaldo</span>
+                            </div>
+                            <div class="info">
+                                <div class="like">
+                                    <img src="like.png" alt="">
+                                    <span>24</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.png" alt="">
+                                    <span>5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

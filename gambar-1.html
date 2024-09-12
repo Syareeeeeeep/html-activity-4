@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gambar-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            font-family: "Inter", sans-serif;
+            font-style: normal;
+            margin: 0;
+            padding: auto;
+        }
+
+        body {
+            background-color: #ffffff;
+        }
+
+        .container {
+            background-color: #FFFFFF;
+            width: 400px;
+            /* height: 500px; */
+            border-radius: 6px;
+            margin: auto;
+            margin-top: 15px;
+            padding: 30px;
+            box-shadow: 2px 2px 10px rgb(206, 206, 206);
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .title h1 {
+            font-size: 20px;
+        }
+        
+        .title span {
+            font-size: 14px;
+            font-weight: 500;
+            color: grey;
+        }
+
+        .imgtop img {
+            width: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .image img {
+            width: 25px;
+        }
+
+        .isi {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .isi .image {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+        }
+
+        .image .pensil {
+            width: 50px;
+        }
+
+        .image .development {
+            width: 35px;
+        }
+
+        .image .testing {
+            width: 35px;
+        }
+
+        .isi #satu {
+            background-color: #baffd2;
+        }
+        .isi #dua {
+            background-color: #fcf4c7;
+        }
+        .isi #tiga {
+            background-color: #e1eeff;
+        }
+        .isi #empat {
+            background-color: #fddfe6;
+        }
+        .isi #lima {
+            background-color: #ffe3f8;
+        }
+
+        .isi .nama h1 {
+            font-weight: 700;
+            font-size: 16px;
+
+        }
+
+        .isi .nama span {
+            font-size: 14px;
+            font-weight: 500;
+            color: grey;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="title">
+                <h1>Tasks Overview</h1>
+                <span>Pending 10 tasks</span>
+            </div>
+            <div class="imgtop">
+                <img src="menu.png" alt="">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="isi">
+                <div class="image" id="satu">
+                    <img src="project-briefing.png" alt="">
+                </div>
+                <div class="nama">
+                    <h1>Project Briefing</h1>
+                    <span>Project Manager</span>
+                </div>
+            </div>
+            <div class="isi">
+                <div class="image" id="dua">
+                    <img class="pensil" src="pencil [A7431CC].png" alt="">
+                </div>
+                <div class="nama">
+                    <h1>Concept Design</h1>
+                    <span>Art Director</span>
+                </div>
+            </div>
+            <div class="isi">
+                <div class="image" id="tiga">
+                    <img src="functional.png" alt="">
+                </div>
+                <div class="nama">
+                    <h1>Functional Logics</h1>
+                    <span>Lead Developer</span>
+                </div>
+            </div>
+            <div class="isi">
+                <div class="image" id="empat">
+                    <img class="development" src="Proyek Baru 7 [3B4846B].png" alt="">
+                </div>
+                <div class="nama">
+                    <h1>Development</h1>
+                    <span>DevOps</span>
+                </div>
+            </div>
+            <div class="isi">
+                <div class="image" id="lima">
+                    <img class="testing" src="Proyek Baru 8 [F4282C8].png" alt="">
+                </div>
+                <div class="nama">
+                    <h1>Testing</h1>
+                    <span>QA Managers</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
